@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "465426716466",
+    "project_id": "journeymate-1a57c",
+    "storage_bucket": "journeymate-1a57c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465426716466:android:829299bc56837c5147692b",
+        "android_client_info": {
+          "package_name": "com.abhicoder.journeymate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDloSFQGqFcrJjVDtn6w6MP5UHpPXPj3Pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
