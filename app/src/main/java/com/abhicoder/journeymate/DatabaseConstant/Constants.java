@@ -5,7 +5,7 @@ public class Constants {
 
     public static final String KEY_COLLECTION_USERS="users";
 
-    public static  final String KEY_COLLECTION_PARKING_HISTORY="UserParkingHistory";
+
 
     public static final String KEY_COLLECTION_RATING="Rating";
 
