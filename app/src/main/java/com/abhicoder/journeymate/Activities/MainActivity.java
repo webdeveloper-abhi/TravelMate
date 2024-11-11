@@ -11,6 +11,7 @@ import com.abhicoder.journeymate.Fragments.EditProfileFragment;
 import com.abhicoder.journeymate.Fragments.FeedbackFragment;
 import com.abhicoder.journeymate.Fragments.Home;
 import com.abhicoder.journeymate.Fragments.MapFragment;
+import com.abhicoder.journeymate.Fragments.MyTrips;
 import com.abhicoder.journeymate.Fragments.PrivacyPolicyFragment;
 import com.abhicoder.journeymate.Fragments.ViewProfileFragment;
 import com.abhicoder.journeymate.PreferenceManager.PreferenceManager;
@@ -106,6 +107,8 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(new FeedbackFragment(), 0);
                 }else if(id==R.id.menu_privacy_security){
                     loadFragment(new PrivacyPolicyFragment(),0);
+                }else if(id==R.id.menu_mytrip){
+                    loadFragment(new MyTrips(),0);
                 }else {
                     loadFragment(new MapFragment(), 1);
                 }

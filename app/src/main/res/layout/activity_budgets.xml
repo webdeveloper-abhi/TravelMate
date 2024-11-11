@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="Budget"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"/>
+
+
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="8dp"
+        android:text="Choose spending habits for your trip"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#666666"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/button_cheap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subheading"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="#9C27B0"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CHEAP\nStay conscious of costs"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/low_price" /> <!-- Replace with your icon -->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/button_moderate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_cheap"
+        android:orientation="horizontal"
+        android:background="#3F51B5"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MODERATE\nKeep cost on the average side"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/moderate" /> <!-- Replace with your icon -->
+    </LinearLayout>
+
+    <!-- Button 3: Luxury -->
+    <LinearLayout
+        android:id="@+id/button_luxury"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_moderate"
+        android:orientation="horizontal"
+        android:background="#E91E63"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LUXURY\nDon't worry about cost"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/luxury" /> <!-- Replace with your icon -->
+    </LinearLayout>
+
+    <!-- Continue Button at the bottom -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="204dp"
+        android:backgroundTint="#000000"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        android:text="Continue"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+</RelativeLayout>

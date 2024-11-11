@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Title at the top -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="My Trip"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Placeholder message when no trips are planned -->
+    <LinearLayout
+        android:id="@+id/noTripsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- No trips planned message -->
+        <TextView
+            android:id="@+id/noTripsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No trips planned yet"
+            android:textSize="18sp"
+            android:textColor="#666666"/>
+
+        <!-- Subtext message -->
+        <TextView
+            android:id="@+id/subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Time to plan a new travel experience! Get started."
+            android:textSize="16sp"
+            android:textColor="#999999"/>
+
+        <!-- Button to start a new trip -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startNewTripButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Start a New Trip"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00796B"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tripsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:paddingTop="10dp"/>
+
+</RelativeLayout>
